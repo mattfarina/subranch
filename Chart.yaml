@@ -1,0 +1,9 @@
+apiVersion: v2
+name: subranch
+description: Install Rancher as a subchart with something else in a different namespace.
+version: 0.1.0
+kubeVersion: < 1.27.0-0
+dependencies:
+- name: rancher
+  repository: https://releases.rancher.com/server-charts/latest
+  version: ^2.7
